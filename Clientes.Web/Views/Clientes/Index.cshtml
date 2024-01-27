@@ -1,0 +1,60 @@
+﻿@model IEnumerable<Clientes.Web.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="table-container">
+    <div class="title-lista">
+        <p>Lista de Clientes</p>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cuit)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RazonSocial)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Activo)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cuit)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RazonSocial)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefono)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Direccion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Activo)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id"><i class="fa-solid fa-pen"></i></a>
+                        <a asp-action="Details" asp-route-id="@item.Id"><i class="fa-solid fa-circle-info"></i></a>
+                        <a asp-action="Delete" asp-route-id="@item.Id"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,47 @@
+﻿@model Clientes.Web.Models.Cliente
+
+@{
+    ViewData["Title"] = "Detalle";
+}
+
+<div class="form-container">
+    <div class="title">
+        <p>Información Cliente</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <dl>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Cuit)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Cuit)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.RazonSocial)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.RazonSocial)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Telefono)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Telefono)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Direccion)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Direccion)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Activo)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Activo)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,166 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    min-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.icono {
+    width: 30%;
+}
+
+.display-4{
+    font-size: 30px;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-group .option {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-group .option i{
+    margin-right: 5px;
+}
+
+.title{
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.title p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.title-lista {
+    margin: 0px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.title-lista p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+form {
+    font-family: sans-serif;
+    margin-bottom: 40px;
+}
+
+form input{
+    margin-bottom: 20px;
+}
+
+form .btn {
+    background-color: #00A3E2;
+    border: none;
+}
+
+form .btn:hover {
+    background-color: black;
+}
+
+form .form-check-input:checked{
+    outline: none;
+    background-color: #00A3E2;
+    border: none;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 60px 0px 60px;
+}
+
+.table-container table i {
+    color: #00A3E2;
+    margin-right: 15px;
+}
+
+.table-container table i:hover {
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        min-height: 300px;
+    }
+
+    .icono {
+        width: 50%;
+    }
+
+    .display-4 {
+        font-size: 25px;
+    }
+
+    .list-group {
+        margin: 0px 10px 0px 10px;
+    }
+
+    .list-group .option {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .table-container {
+        font-size: 9px;
+        margin: 0px 30px 0px 30px;
+    }
+
+    .title-lista {
+        margin: 0px 0px 20px 0px;
+    }
+
+    .form-container {
+        margin: 0px 15px 0px 15px;
+    }
+}
